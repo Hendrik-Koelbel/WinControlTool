@@ -130,12 +130,12 @@ Voulez-vous vraiment faire cette action ?</value>
   <data name="Note" xml:space="preserve">
     <value>Allusion</value>
   </data>
-  <data name="YouHaveStartedTheProgramWithoutAdministratorRights" xml:space="preserve">
-    <value>Vous avez lancé le programme sans droits d'administrateur. 
-Souhaitez-vous redémarrer le programme avec le droit Admin pour pouvoir utiliser toutes les fonctions ?</value>
+  <data name="ProgramWithoutAdministratorRights" xml:space="preserve">
+    <value>Le programme n'a pas de droits d'administration accrus. 
+Voulez-vous le redémarrer avec des droits d'administration accrus pour pouvoir utiliser toutes les fonctions?</value>
   </data>
-  <data name="StartedWithoutAdminRights" xml:space="preserve">
-    <value>Démarré sans droits d'administrateur</value>
+  <data name="WithoutAdminRights" xml:space="preserve">
+    <value>Programme sans droits d'administrateur</value>
   </data>
   <data name="TheProgramWasPlacedInTheTaskBarAtTheStart" xml:space="preserve">
     <value>Le programme a été enregistré dans la barre des tâches lorsqu'il a été lancé.</value>

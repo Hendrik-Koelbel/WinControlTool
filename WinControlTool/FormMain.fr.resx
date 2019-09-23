@@ -154,7 +154,7 @@
     <value>Journal de bord</value>
   </data>
   <data name="labelHeader.Text" xml:space="preserve">
-    <value>Fux Control-Tool</value>
+    <value>Windows Control-Tool</value>
   </data>
   <data name="buttonSyncDateTime.Text" xml:space="preserve">
     <value>Sync</value>
@@ -168,11 +168,8 @@
   <data name="buttonUpdate.Text" xml:space="preserve">
     <value>Vérification</value>
   </data>
-  <data name="labelLogHeader.Text" xml:space="preserve">
-    <value>Effacer le journal :</value>
-  </data>
   <data name="buttonReset.Text" xml:space="preserve">
-    <value>Clair</value>
+    <value>Effacer le journal</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Forme principale</value>
@@ -189,7 +186,19 @@
   <data name="groupBoxHints.Text" xml:space="preserve">
     <value>Indices</value>
   </data>
-  <data name="checkBoxDisableStartHint.Text" xml:space="preserve">
-    <value>Désactiver l'astuce de départ (si vous n'êtes pas un admin)</value>
+  <data name="groupBoxLog.Text" xml:space="preserve">
+    <value>Journal de bord</value>
+  </data>
+  <data name="buttonApplyTime.Text" xml:space="preserve">
+    <value>Postulez</value>
+  </data>
+  <data name="buttonApplyDate.Text" xml:space="preserve">
+    <value>Postulez</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Text" xml:space="preserve">
+    <value>Remarque "Droits accrus requis" Désactiver</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.Text" xml:space="preserve">
+    <value>Désactiver l'indice de ballon</value>
   </data>
 </root>

@@ -39,6 +39,7 @@
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageHome = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanelHome = new System.Windows.Forms.TableLayoutPanel();
             this.tabPageSecure = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelSecurity = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxSecurity = new System.Windows.Forms.GroupBox();
@@ -47,8 +48,10 @@
             this.tabPageDateTime = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelDateAndTime = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxSelectTime = new System.Windows.Forms.GroupBox();
+            this.buttonApplyTime = new System.Windows.Forms.Button();
             this.TimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBoxSelectDate = new System.Windows.Forms.GroupBox();
+            this.buttonApplyDate = new System.Windows.Forms.Button();
             this.DatePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBoxSyncDateTime = new System.Windows.Forms.GroupBox();
             this.buttonSyncDateTime = new System.Windows.Forms.Button();
@@ -59,16 +62,19 @@
             this.groupBoxUpdate = new System.Windows.Forms.GroupBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.groupBoxHints = new System.Windows.Forms.GroupBox();
-            this.checkBoxDisableStartHint = new System.Windows.Forms.CheckBox();
+            this.checkBoxDisableBalloonHint = new System.Windows.Forms.CheckBox();
+            this.checkBoxDisableElevatedAdminRightsHint = new System.Windows.Forms.CheckBox();
             this.tabPageLog = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelLog = new System.Windows.Forms.TableLayoutPanel();
-            this.labelLogHeader = new System.Windows.Forms.Label();
+            this.groupBoxLog = new System.Windows.Forms.GroupBox();
+            this.textBoxLog = new System.Windows.Forms.TextBox();
             this.buttonReset = new System.Windows.Forms.Button();
             this.labelHeader = new System.Windows.Forms.Label();
             this.pictureBoxGitHub = new System.Windows.Forms.PictureBox();
             this.contextMenu.SuspendLayout();
             this.tableLayoutPanelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
+            this.tabPageHome.SuspendLayout();
             this.tabPageSecure.SuspendLayout();
             this.tableLayoutPanelSecurity.SuspendLayout();
             this.groupBoxSecurity.SuspendLayout();
@@ -84,6 +90,7 @@
             this.groupBoxHints.SuspendLayout();
             this.tabPageLog.SuspendLayout();
             this.tableLayoutPanelLog.SuspendLayout();
+            this.groupBoxLog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGitHub)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,9 +158,15 @@
             // 
             // tabPageHome
             // 
+            this.tabPageHome.Controls.Add(this.tableLayoutPanelHome);
             resources.ApplyResources(this.tabPageHome, "tabPageHome");
             this.tabPageHome.Name = "tabPageHome";
             this.tabPageHome.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanelHome
+            // 
+            resources.ApplyResources(this.tableLayoutPanelHome, "tableLayoutPanelHome");
+            this.tableLayoutPanelHome.Name = "tableLayoutPanelHome";
             // 
             // tabPageSecure
             // 
@@ -210,9 +223,16 @@
             // groupBoxSelectTime
             // 
             resources.ApplyResources(this.groupBoxSelectTime, "groupBoxSelectTime");
+            this.groupBoxSelectTime.Controls.Add(this.buttonApplyTime);
             this.groupBoxSelectTime.Controls.Add(this.TimePicker);
             this.groupBoxSelectTime.Name = "groupBoxSelectTime";
             this.groupBoxSelectTime.TabStop = false;
+            // 
+            // buttonApplyTime
+            // 
+            resources.ApplyResources(this.buttonApplyTime, "buttonApplyTime");
+            this.buttonApplyTime.Name = "buttonApplyTime";
+            this.buttonApplyTime.UseVisualStyleBackColor = true;
             // 
             // TimePicker
             // 
@@ -225,9 +245,16 @@
             // groupBoxSelectDate
             // 
             resources.ApplyResources(this.groupBoxSelectDate, "groupBoxSelectDate");
+            this.groupBoxSelectDate.Controls.Add(this.buttonApplyDate);
             this.groupBoxSelectDate.Controls.Add(this.DatePicker);
             this.groupBoxSelectDate.Name = "groupBoxSelectDate";
             this.groupBoxSelectDate.TabStop = false;
+            // 
+            // buttonApplyDate
+            // 
+            resources.ApplyResources(this.buttonApplyDate, "buttonApplyDate");
+            this.buttonApplyDate.Name = "buttonApplyDate";
+            this.buttonApplyDate.UseVisualStyleBackColor = true;
             // 
             // DatePicker
             // 
@@ -296,17 +323,25 @@
             // groupBoxHints
             // 
             resources.ApplyResources(this.groupBoxHints, "groupBoxHints");
-            this.tableLayoutPanelSettings.SetColumnSpan(this.groupBoxHints, 2);
-            this.groupBoxHints.Controls.Add(this.checkBoxDisableStartHint);
+            this.tableLayoutPanelSettings.SetColumnSpan(this.groupBoxHints, 3);
+            this.groupBoxHints.Controls.Add(this.checkBoxDisableBalloonHint);
+            this.groupBoxHints.Controls.Add(this.checkBoxDisableElevatedAdminRightsHint);
             this.groupBoxHints.Name = "groupBoxHints";
             this.groupBoxHints.TabStop = false;
             // 
-            // checkBoxDisableStartHint
+            // checkBoxDisableBalloonHint
             // 
-            resources.ApplyResources(this.checkBoxDisableStartHint, "checkBoxDisableStartHint");
-            this.checkBoxDisableStartHint.Name = "checkBoxDisableStartHint";
-            this.checkBoxDisableStartHint.UseVisualStyleBackColor = true;
-            this.checkBoxDisableStartHint.CheckStateChanged += new System.EventHandler(this.CheckBoxDisableStartHint_CheckStateChanged);
+            resources.ApplyResources(this.checkBoxDisableBalloonHint, "checkBoxDisableBalloonHint");
+            this.checkBoxDisableBalloonHint.Name = "checkBoxDisableBalloonHint";
+            this.checkBoxDisableBalloonHint.UseVisualStyleBackColor = true;
+            this.checkBoxDisableBalloonHint.CheckStateChanged += new System.EventHandler(this.CheckBoxDisableBalloonHint_CheckStateChanged);
+            // 
+            // checkBoxDisableElevatedAdminRightsHint
+            // 
+            resources.ApplyResources(this.checkBoxDisableElevatedAdminRightsHint, "checkBoxDisableElevatedAdminRightsHint");
+            this.checkBoxDisableElevatedAdminRightsHint.Name = "checkBoxDisableElevatedAdminRightsHint";
+            this.checkBoxDisableElevatedAdminRightsHint.UseVisualStyleBackColor = true;
+            this.checkBoxDisableElevatedAdminRightsHint.CheckStateChanged += new System.EventHandler(this.CheckBoxDisableElevatedAdminRightsHint_CheckStateChanged);
             // 
             // tabPageLog
             // 
@@ -318,14 +353,23 @@
             // tableLayoutPanelLog
             // 
             resources.ApplyResources(this.tableLayoutPanelLog, "tableLayoutPanelLog");
-            this.tableLayoutPanelLog.Controls.Add(this.labelLogHeader, 0, 0);
-            this.tableLayoutPanelLog.Controls.Add(this.buttonReset, 1, 0);
+            this.tableLayoutPanelLog.Controls.Add(this.groupBoxLog, 0, 0);
             this.tableLayoutPanelLog.Name = "tableLayoutPanelLog";
             // 
-            // labelLogHeader
+            // groupBoxLog
             // 
-            resources.ApplyResources(this.labelLogHeader, "labelLogHeader");
-            this.labelLogHeader.Name = "labelLogHeader";
+            resources.ApplyResources(this.groupBoxLog, "groupBoxLog");
+            this.tableLayoutPanelLog.SetColumnSpan(this.groupBoxLog, 2);
+            this.groupBoxLog.Controls.Add(this.textBoxLog);
+            this.groupBoxLog.Controls.Add(this.buttonReset);
+            this.groupBoxLog.Name = "groupBoxLog";
+            this.tableLayoutPanelLog.SetRowSpan(this.groupBoxLog, 2);
+            this.groupBoxLog.TabStop = false;
+            // 
+            // textBoxLog
+            // 
+            resources.ApplyResources(this.textBoxLog, "textBoxLog");
+            this.textBoxLog.Name = "textBoxLog";
             // 
             // buttonReset
             // 
@@ -359,6 +403,7 @@
             this.tableLayoutPanelMain.ResumeLayout(false);
             this.tableLayoutPanelMain.PerformLayout();
             this.tabControlMain.ResumeLayout(false);
+            this.tabPageHome.ResumeLayout(false);
             this.tabPageSecure.ResumeLayout(false);
             this.tableLayoutPanelSecurity.ResumeLayout(false);
             this.tableLayoutPanelSecurity.PerformLayout();
@@ -368,7 +413,9 @@
             this.tableLayoutPanelDateAndTime.ResumeLayout(false);
             this.tableLayoutPanelDateAndTime.PerformLayout();
             this.groupBoxSelectTime.ResumeLayout(false);
+            this.groupBoxSelectTime.PerformLayout();
             this.groupBoxSelectDate.ResumeLayout(false);
+            this.groupBoxSelectDate.PerformLayout();
             this.groupBoxSyncDateTime.ResumeLayout(false);
             this.groupBoxSyncDateTime.PerformLayout();
             this.tabPageSettings.ResumeLayout(false);
@@ -382,6 +429,8 @@
             this.tabPageLog.ResumeLayout(false);
             this.tableLayoutPanelLog.ResumeLayout(false);
             this.tableLayoutPanelLog.PerformLayout();
+            this.groupBoxLog.ResumeLayout(false);
+            this.groupBoxLog.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGitHub)).EndInit();
             this.ResumeLayout(false);
 
@@ -404,7 +453,6 @@
         private System.Windows.Forms.TabPage tabPageDateTime;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelLog;
         private System.Windows.Forms.Button buttonReset;
-        private System.Windows.Forms.Label labelLogHeader;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSecurity;
         private System.Windows.Forms.GroupBox groupBoxSecurity;
         private System.Windows.Forms.RadioButton radioButtonDisableSecurity;
@@ -424,7 +472,13 @@
         private System.Windows.Forms.DateTimePicker TimePicker;
         private System.Windows.Forms.Button buttonSyncDateTime;
         private System.Windows.Forms.GroupBox groupBoxHints;
-        private System.Windows.Forms.CheckBox checkBoxDisableStartHint;
+        private System.Windows.Forms.CheckBox checkBoxDisableElevatedAdminRightsHint;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelHome;
+        private System.Windows.Forms.GroupBox groupBoxLog;
+        private System.Windows.Forms.TextBox textBoxLog;
+        private System.Windows.Forms.Button buttonApplyTime;
+        private System.Windows.Forms.Button buttonApplyDate;
+        private System.Windows.Forms.CheckBox checkBoxDisableBalloonHint;
     }
 }
 

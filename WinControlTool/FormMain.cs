@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 using UACHelper;
@@ -20,6 +21,8 @@ namespace WinControlTool
             this.allowVisible = false; // Defines the visibility state of the form (true is shown and false is hidden)
             this.trayIcon.MouseUp += new MouseEventHandler(NotifyIconClicked);
             this.Deactivate += new EventHandler(HideOnEvent);
+
+            CheckArguments();
 
             PresetDefaultSettings();
 
@@ -43,10 +46,10 @@ namespace WinControlTool
             };
             timer.Start();
 
-            if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableStartHint")) // If it's not disabled
+            if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableBalloonHint")) // If it's not disabled
             {
                 // a BalloonTip will be displayed
-                Notification(500, WinControlTool.Properties.Resources.Note, WinControlTool.Properties.Resources.TheProgramWasPlacedInTheTaskBarAtTheStart, ToolTipIcon.Info);
+                Notification(5000, WinControlTool.Properties.Resources.Note, WinControlTool.Properties.Resources.TheProgramWasPlacedInTheTaskBarAtTheStart, ToolTipIcon.Info);
             }
         }
 
@@ -125,33 +128,17 @@ namespace WinControlTool
                 comboBoxLanguage.SelectedIndexChanged -= new EventHandler(ComboBoxLanguage_SelectedIndexChanged);
                 Language.checkLanguage(this, comboBoxLanguage);
                 comboBoxLanguage.SelectedIndexChanged += new EventHandler(ComboBoxLanguage_SelectedIndexChanged);
-                if (!UACHelper.UACHelper.IsAdministrator) // Program was started without admin rights
+                if (!UACHelper.UACHelper.IsElevated) // Program was started with admin rights
                 {
-                    if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableStartHint"))
+                    if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableElevatedAdminRightsHint"))
                     {
                         // UAC Helper Class GitHub Doc
                         // https://github.com/falahati/UACHelper
-                        DialogResult result = WinForm.ShieldifyNativeDialog(DialogResult.Yes, () =>
-                                MessageBox.Show(this, WinControlTool.Properties.Resources.YouHaveStartedTheProgramWithoutAdministratorRights,
-                                   WinControlTool.Properties.Resources.StartedWithoutAdminRights, MessageBoxButtons.YesNo,
-                                    MessageBoxIcon.Information));
-                        switch (result)
-                        {
-                            case DialogResult.Yes:
-                                ProcessStartInfo proc = new ProcessStartInfo();
-                                proc.UseShellExecute = true;
-                                proc.WorkingDirectory = Environment.CurrentDirectory;
-                                proc.FileName = Assembly.GetEntryAssembly().CodeBase;
-                                proc.Verb = "runas";
-                                Process.Start(proc);
-                                ForceClose();
-                                break;
-                            case DialogResult.No:
-                                this.Show();
-                                // add all admin actions the UAC Shield
-                                WinForm.ShieldifyButton(buttonSyncDateTime);
-                                break;
-                        }
+                        ElevatedDialogSwitcher();
+                    }
+                    else
+                    {
+                        AddUACShieldToControls();
                     }
                 }
             }
@@ -200,7 +187,7 @@ namespace WinControlTool
         {
             if (e.Button == System.Windows.Forms.MouseButtons.Left) // If the left mouse button is pressed
             {
-                GoToWebsite("https://github.com/Hendrik-Koelbel/");
+                GoToWebsite("https://github.com/Hendrik-Koelbel/WinControlTool");
             }
         }
 
@@ -348,13 +335,80 @@ namespace WinControlTool
         {
             try
             {
-                Process processTime = new Process();
-                processTime.StartInfo.FileName = "w32tm";
-                processTime.StartInfo.Arguments = "/resync";
-                processTime.StartInfo.Verb = "runas";
-                processTime.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                processTime.Start();
-                processTime.WaitForExit();
+                if (!UACHelper.UACHelper.IsElevated)
+                {
+                    ElevatedDialogSwitcher();
+                }
+                else
+                {
+                    Process processResync = new Process();
+                    processResync.StartInfo.FileName = "w32tm";
+                    processResync.StartInfo.Arguments = "/resync";
+                    processResync.StartInfo.Verb = "runas";
+                    processResync.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    processResync.Start();
+                    Application.UseWaitCursor = true;
+                    processResync.WaitForExit(10000);
+                    Application.UseWaitCursor = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                DialogResult result = MessageBox.Show(ex.Message,
+                    ex.GetType().Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (result == DialogResult.OK)
+                {
+                    thisVisibility();
+                }
+            }
+        }
+        
+
+        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                //Process processDate = new Process();
+                //processDate.StartInfo.FileName = "cmd.exe";
+                //processDate.StartInfo.Arguments = "/date " + DatePicker.Value.Day + "." + DatePicker.Value.Month + "." + DatePicker.Value.Year;
+                //processDate.StartInfo.Verb = "runas";
+                //processDate.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                //processDate.Start();
+                //processDate.WaitForExit();
+            }
+            catch (Exception ex)
+            {
+                DialogResult result = MessageBox.Show(ex.Message,
+                    ex.GetType().Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (result == DialogResult.OK)
+                {
+                    thisVisibility();
+                }
+            }
+        }
+        private void TimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (Exception ex)
+            {
+                DialogResult result = MessageBox.Show(ex.Message,
+                    ex.GetType().Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (result == DialogResult.OK)
+                {
+                    thisVisibility();
+                }
+            }
+        }
+        #endregion
+
+        private void RadioButtonDisableSecurity_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // hier noch die änderung in der Registry einfügen
             }
             catch (Exception ex)
             {
@@ -367,33 +421,10 @@ namespace WinControlTool
             }
         }
 
-        private void DatePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TimePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
-
-        private void RadioButtonDisableSecurity_CheckedChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                // hier noch die änderung in der Registry einfügen
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, ex.GetType().Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         /// <summary>
         /// System notification
         /// </summary>
-        /// <param name="Time">Time displayed</param>
+        /// <param name="Time">Time displayed in milliseconds (5000 = 5 seconds)</param>
         /// <param name="TitleText">Title text (REQUIRED)</param>
         /// <param name="TipText">Body text (REQUIRED)</param>
         /// <param name="Icon">Icon</param>
@@ -411,22 +442,39 @@ namespace WinControlTool
             }
         }
 
-        private void CheckBoxDisableStartHint_CheckStateChanged(object sender, EventArgs e)
+        private void CheckBoxDisableElevatedAdminRightsHint_CheckStateChanged(object sender, EventArgs e)
         {
             try
             {
-                if (checkBoxDisableStartHint.CheckState == CheckState.Checked)
+                if (checkBoxDisableElevatedAdminRightsHint.CheckState == CheckState.Checked)
                 {
-                    RegistryHelper.SaveValue("GeneralSettings", "DisableStartHint", true);
+                    RegistryHelper.SaveValue("GeneralSettings", "DisableElevatedAdminRightsHint", true);
                 }
-                else if (checkBoxDisableStartHint.CheckState == CheckState.Unchecked)
+                else if (checkBoxDisableElevatedAdminRightsHint.CheckState == CheckState.Unchecked)
                 {
-                    RegistryHelper.SaveValue("GeneralSettings", "DisableStartHint", false);
+                    RegistryHelper.SaveValue("GeneralSettings", "DisableElevatedAdminRightsHint", false);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message, ex.GetType().Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void CheckBoxDisableBalloonHint_CheckStateChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (checkBoxDisableElevatedAdminRightsHint.CheckState == CheckState.Checked)
+                {
+                    RegistryHelper.SaveValue("GeneralSettings", "DisableBalloonHint", true);
+                }
+                else if (checkBoxDisableElevatedAdminRightsHint.CheckState == CheckState.Unchecked)
+                {
+                    RegistryHelper.SaveValue("GeneralSettings", "DisableBalloonHint", false);
+                }
+            }
+            catch (Exception)
+            {
             }
         }
 
@@ -441,16 +489,72 @@ namespace WinControlTool
                 else if (!RegistryHelper.GetBoolean("SecuritySettings", "EnableSecurity"))
                     radioButtonDisableSecurity.Checked = true;
 
-                RegistryHelper.CreateKeyIfNotExisting("GeneralSettings", "DisableStartHint", false);
-                if (RegistryHelper.GetBoolean("GeneralSettings", "DisableStartHint"))
-                    checkBoxDisableStartHint.Checked = true;
-                else if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableStartHint"))
-                    checkBoxDisableStartHint.Checked = false;
+                RegistryHelper.CreateKeyIfNotExisting("GeneralSettings", "DisableElevatedAdminRightsHint", false);
+                if (RegistryHelper.GetBoolean("GeneralSettings", "DisableElevatedAdminRightsHint"))
+                    checkBoxDisableElevatedAdminRightsHint.Checked = true;
+                else if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableElevatedAdminRightsHint"))
+                    checkBoxDisableElevatedAdminRightsHint.Checked = false; 
+
+                    RegistryHelper.CreateKeyIfNotExisting("GeneralSettings", "DisableBalloonHint", false);
+                if (RegistryHelper.GetBoolean("GeneralSettings", "DisableBalloonHint"))
+                    checkBoxDisableBalloonHint.Checked = true;
+                else if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableBalloonHint"))
+                    checkBoxDisableBalloonHint.Checked = false;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, ex.GetType().Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        #endregion
+
+        #region UAC Shield Controls
+        public void ElevatedDialogSwitcher()
+        {
+            DialogResult result = WinForm.ShieldifyNativeDialog(DialogResult.Yes, () =>
+                                MessageBox.Show(this, WinControlTool.Properties.Resources.ProgramWithoutAdministratorRights,
+                                   WinControlTool.Properties.Resources.WithoutAdminRights, MessageBoxButtons.YesNo,
+                                    MessageBoxIcon.Information));
+            switch (result)
+            {
+                case DialogResult.Yes:
+                    RestartWithElevatedRights();
+                    break;
+                case DialogResult.No:
+                case DialogResult.None:
+                    this.Show();
+                    AddUACShieldToControls();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public void AddUACShieldToControls()
+        {
+            // Add UAC Shield to Controls
+            WinForm.ShieldifyButton(buttonApplyDate);
+            WinForm.ShieldifyButton(buttonApplyTime);
+            WinForm.ShieldifyButton(buttonSyncDateTime);
+        }
+
+        public void CheckArguments()
+        {
+            string[] args = Environment.GetCommandLineArgs();
+            foreach (var arg in args)
+            {
+                if (arg == "restart")
+                {
+                    allowVisible = true;
+                    this.Show();
+                }
+            }
+        }
+
+        public void RestartWithElevatedRights()
+        {
+            UACHelper.UACHelper.StartElevated(new ProcessStartInfo(Assembly.GetExecutingAssembly().Location, "restart"));
+            ForceClose();
         }
         #endregion
     }

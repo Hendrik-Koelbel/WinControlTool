@@ -215,12 +215,12 @@ Do you really want to do this action?</value>
   <data name="shell32_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shell32_321.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="YouHaveStartedTheProgramWithoutAdministratorRights" xml:space="preserve">
-    <value>You have started the program without administrator rights. 
-Would you like to restart the program with Admin right to be able to use all functions?</value>
+  <data name="ProgramWithoutAdministratorRights" xml:space="preserve">
+    <value>The program has no elevated admin rights. 
+Do you want to restart it with elevated admin rights to use all functions?</value>
   </data>
-  <data name="StartedWithoutAdminRights" xml:space="preserve">
-    <value>Started without admin rights</value>
+  <data name="WithoutAdminRights" xml:space="preserve">
+    <value>Program without admin rights</value>
   </data>
   <data name="TheProgramWasPlacedInTheTaskBarAtTheStart" xml:space="preserve">
     <value>The program was placed in the task bar at the start.</value>

@@ -136,7 +136,7 @@
     <value>Protokoll</value>
   </data>
   <data name="labelHeader.Text" xml:space="preserve">
-    <value>Fux Steuerungs-Tool</value>
+    <value>Windows Steuerungs-Tool</value>
   </data>
   <data name="tabPageSecure.Text" xml:space="preserve">
     <value>Sicherheit</value>
@@ -144,11 +144,8 @@
   <data name="tabPageDateTime.Text" xml:space="preserve">
     <value>Datum und Zeit</value>
   </data>
-  <data name="labelLogHeader.Text" xml:space="preserve">
-    <value>Protokoll leeren:</value>
-  </data>
   <data name="buttonReset.Text" xml:space="preserve">
-    <value>Löschen</value>
+    <value>Protokoll leeren</value>
   </data>
   <data name="checkForUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>Prüfe nach Update</value>
@@ -189,7 +186,19 @@
   <data name="groupBoxHints.Text" xml:space="preserve">
     <value>Hinweise</value>
   </data>
-  <data name="checkBoxDisableStartHint.Text" xml:space="preserve">
-    <value>Start Hinweis deaktivieren (wenn du kein Admin bist)</value>
+  <data name="groupBoxLog.Text" xml:space="preserve">
+    <value>Protokoll</value>
+  </data>
+  <data name="buttonApplyTime.Text" xml:space="preserve">
+    <value>Übernehmen</value>
+  </data>
+  <data name="buttonApplyDate.Text" xml:space="preserve">
+    <value>Übernehmen</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Text" xml:space="preserve">
+    <value>Hinweis "erhöhte Adminrechte erforderlich" Deaktivieren</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.Text" xml:space="preserve">
+    <value>Ballonhinweis deaktivieren</value>
   </data>
 </root>

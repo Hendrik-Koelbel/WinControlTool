@@ -1046,6 +1046,40 @@
   <data name="tableLayoutPanelMain.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="tableLayoutPanelHome.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanelHome.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelHome.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 302</value>
+  </data>
+  <data name="tableLayoutPanelHome.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.Name" xml:space="preserve">
+    <value>tableLayoutPanelHome</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelHome.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="tabPageHome.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
   </data>
@@ -1130,7 +1164,6 @@
   <data name="&gt;&gt;radioButtonEnableSecurity.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupBoxSecurity.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1218,6 +1251,36 @@
   <data name="groupBoxSelectTime.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="buttonApplyTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonApplyTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonApplyTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 69</value>
+  </data>
+  <data name="buttonApplyTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 33</value>
+  </data>
+  <data name="buttonApplyTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonApplyTime.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Name" xml:space="preserve">
+    <value>buttonApplyTime</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Parent" xml:space="preserve">
+    <value>groupBoxSelectTime</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="TimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 36</value>
   </data>
@@ -1237,16 +1300,16 @@
     <value>groupBoxSelectTime</value>
   </data>
   <data name="&gt;&gt;TimePicker.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="groupBoxSelectTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="groupBoxSelectTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 106</value>
+    <value>3, 139</value>
   </data>
   <data name="groupBoxSelectTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 89</value>
+    <value>179, 128</value>
   </data>
   <data name="groupBoxSelectTime.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1269,8 +1332,38 @@
   <data name="groupBoxSelectDate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="buttonApplyDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonApplyDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonApplyDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 71</value>
+  </data>
+  <data name="buttonApplyDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 33</value>
+  </data>
+  <data name="buttonApplyDate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonApplyDate.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Name" xml:space="preserve">
+    <value>buttonApplyDate</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Parent" xml:space="preserve">
+    <value>groupBoxSelectDate</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="DatePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 39</value>
+    <value>6, 38</value>
   </data>
   <data name="DatePicker.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 27</value>
@@ -1288,7 +1381,7 @@
     <value>groupBoxSelectDate</value>
   </data>
   <data name="&gt;&gt;DatePicker.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="groupBoxSelectDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1297,7 +1390,7 @@
     <value>3, 3</value>
   </data>
   <data name="groupBoxSelectDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 97</value>
+    <value>179, 130</value>
   </data>
   <data name="groupBoxSelectDate.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1357,7 +1450,7 @@
     <value>188, 3</value>
   </data>
   <data name="groupBoxSyncDateTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 97</value>
+    <value>166, 130</value>
   </data>
   <data name="groupBoxSyncDateTime.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1545,32 +1638,62 @@
   <data name="groupBoxHints.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBoxDisableStartHint.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBoxDisableBalloonHint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBoxDisableStartHint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 26</value>
+  <data name="checkBoxDisableBalloonHint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="checkBoxDisableStartHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 24</value>
+  <data name="checkBoxDisableBalloonHint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
   </data>
-  <data name="checkBoxDisableStartHint.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="checkBoxDisableBalloonHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 24</value>
   </data>
-  <data name="checkBoxDisableStartHint.Text" xml:space="preserve">
-    <value>Disable start hint (if you are not a admin)</value>
+  <data name="checkBoxDisableBalloonHint.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;checkBoxDisableStartHint.Name" xml:space="preserve">
-    <value>checkBoxDisableStartHint</value>
+  <data name="checkBoxDisableBalloonHint.Text" xml:space="preserve">
+    <value>Disable balloon hint</value>
   </data>
-  <data name="&gt;&gt;checkBoxDisableStartHint.Type" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.Name" xml:space="preserve">
+    <value>checkBoxDisableBalloonHint</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBoxDisableStartHint.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.Parent" xml:space="preserve">
     <value>groupBoxHints</value>
   </data>
-  <data name="&gt;&gt;checkBoxDisableStartHint.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 24</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Text" xml:space="preserve">
+    <value>Disable "elevated admin rights required" hint</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.Name" xml:space="preserve">
+    <value>checkBoxDisableElevatedAdminRightsHint</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.Parent" xml:space="preserve">
+    <value>groupBoxHints</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="groupBoxHints.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1579,7 +1702,7 @@
     <value>3, 104</value>
   </data>
   <data name="groupBoxHints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 76</value>
+    <value>433, 106</value>
   </data>
   <data name="groupBoxHints.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1627,7 +1750,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanelSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxLanguage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxUpdate" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxHints" Row="1" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxLanguage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxUpdate" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxHints" Row="1" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPageSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -1659,56 +1782,53 @@
   <data name="tableLayoutPanelLog.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="labelLogHeader.AutoSize" type="System.Boolean, mscorlib">
+  <data name="groupBoxLog.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelLogHeader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="textBoxLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="labelLogHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
+  <data name="textBoxLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 54</value>
   </data>
-  <data name="labelLogHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 36</value>
+  <data name="textBoxLog.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="labelLogHeader.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="textBoxLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 233</value>
   </data>
-  <data name="labelLogHeader.Text" xml:space="preserve">
-    <value>Clear log:</value>
+  <data name="textBoxLog.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="labelLogHeader.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;textBoxLog.Name" xml:space="preserve">
+    <value>textBoxLog</value>
   </data>
-  <data name="&gt;&gt;labelLogHeader.Name" xml:space="preserve">
-    <value>labelLogHeader</value>
+  <data name="&gt;&gt;textBoxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelLogHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxLog.Parent" xml:space="preserve">
+    <value>groupBoxLog</value>
   </data>
-  <data name="&gt;&gt;labelLogHeader.Parent" xml:space="preserve">
-    <value>tableLayoutPanelLog</value>
-  </data>
-  <data name="&gt;&gt;labelLogHeader.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxLog.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="buttonReset.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
+    <value>Top, Right</value>
   </data>
   <data name="buttonReset.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="buttonReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 3</value>
+    <value>346, 18</value>
   </data>
   <data name="buttonReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 30</value>
+    <value>79, 30</value>
   </data>
   <data name="buttonReset.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="buttonReset.Text" xml:space="preserve">
-    <value>Clear</value>
+    <value>Clear log</value>
   </data>
   <data name="&gt;&gt;buttonReset.Name" xml:space="preserve">
     <value>buttonReset</value>
@@ -1717,10 +1837,37 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonReset.Parent" xml:space="preserve">
-    <value>tableLayoutPanelLog</value>
+    <value>groupBoxLog</value>
   </data>
   <data name="&gt;&gt;buttonReset.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="groupBoxLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="groupBoxLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 296</value>
+  </data>
+  <data name="groupBoxLog.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxLog.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Name" xml:space="preserve">
+    <value>groupBoxLog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Parent" xml:space="preserve">
+    <value>tableLayoutPanelLog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tableLayoutPanelLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1750,7 +1897,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanelLog.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelLogHeader" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonReset" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxLog" Row="0" RowSpan="2" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPageLog.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -1825,7 +1972,7 @@
     <value>2</value>
   </data>
   <data name="labelHeader.Text" xml:space="preserve">
-    <value>Fux Control-Tool</value>
+    <value>Windows Control-Tool</value>
   </data>
   <data name="labelHeader.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>

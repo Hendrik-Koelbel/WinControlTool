@@ -130,12 +130,12 @@ Willst du diese Aktion wirklich durchführen? </value>
   <data name="Note" xml:space="preserve">
     <value>Hinweis</value>
   </data>
-  <data name="YouHaveStartedTheProgramWithoutAdministratorRights" xml:space="preserve">
-    <value>Sie haben das Programm ohne Administratorrechte gestartet. 
-Möchten Sie das Programm mit Admin-Recht neu starten, um alle Funktionen nutzen zu können?</value>
+  <data name="ProgramWithoutAdministratorRights" xml:space="preserve">
+    <value>Das Programm hat keine erhöhten Admin Rechte. 
+Möchtest du es neu starten mit erhöhten Admin Rechten damit du alle Funktionen nutzen kannst?</value>
   </data>
-  <data name="StartedWithoutAdminRights" xml:space="preserve">
-    <value>Ohne Adminrechte gestartet</value>
+  <data name="WithoutAdminRights" xml:space="preserve">
+    <value>Programm ohne Admin Rechte</value>
   </data>
   <data name="TheProgramWasPlacedInTheTaskBarAtTheStart" xml:space="preserve">
     <value>Das Programm wurde beim Start in der Task leiste abgelegt.</value>

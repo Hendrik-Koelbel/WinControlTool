@@ -329,6 +329,16 @@ namespace WinControlTool.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The program has no elevated admin rights. 
+        ///Do you want to restart it with elevated admin rights to use all functions? ähnelt.
+        /// </summary>
+        internal static string ProgramWithoutAdministratorRights {
+            get {
+                return ResourceManager.GetString("ProgramWithoutAdministratorRights", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
         /// </summary>
         internal static System.Drawing.Icon shell32_16817 {
@@ -368,15 +378,6 @@ namespace WinControlTool.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Started without admin rights ähnelt.
-        /// </summary>
-        internal static string StartedWithoutAdminRights {
-            get {
-                return ResourceManager.GetString("StartedWithoutAdminRights", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die The application will be closed now. 
         ///Do you really want to do this action? ähnelt.
         /// </summary>
@@ -396,12 +397,11 @@ namespace WinControlTool.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die You have started the program without administrator rights. 
-        ///Would you like to restart the program with Admin right to be able to use all functions? ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Program without admin rights ähnelt.
         /// </summary>
-        internal static string YouHaveStartedTheProgramWithoutAdministratorRights {
+        internal static string WithoutAdminRights {
             get {
-                return ResourceManager.GetString("YouHaveStartedTheProgramWithoutAdministratorRights", resourceCulture);
+                return ResourceManager.GetString("WithoutAdminRights", resourceCulture);
             }
         }
     }
