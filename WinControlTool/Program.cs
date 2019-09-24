@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
@@ -16,12 +17,12 @@ namespace WinControlTool
         /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             bool createdNew = true;
             using (Mutex mutex = new Mutex(true, "WinControlTool", out createdNew))
             {
-                if (createdNew)
+                if (createdNew || args.Contains("restart"))
                 {
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);

@@ -47,14 +47,11 @@
             this.radioButtonEnableSecurity = new System.Windows.Forms.RadioButton();
             this.tabPageDateTime = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelDateAndTime = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBoxSelectTime = new System.Windows.Forms.GroupBox();
-            this.buttonApplyTime = new System.Windows.Forms.Button();
-            this.TimePicker = new System.Windows.Forms.DateTimePicker();
-            this.groupBoxSelectDate = new System.Windows.Forms.GroupBox();
-            this.buttonApplyDate = new System.Windows.Forms.Button();
-            this.DatePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBoxSyncDateTime = new System.Windows.Forms.GroupBox();
             this.buttonSyncDateTime = new System.Windows.Forms.Button();
+            this.groupBoxSelectDateTime = new System.Windows.Forms.GroupBox();
+            this.buttonApplyDateTime = new System.Windows.Forms.Button();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.tabPageSettings = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelSettings = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxLanguage = new System.Windows.Forms.GroupBox();
@@ -80,9 +77,8 @@
             this.groupBoxSecurity.SuspendLayout();
             this.tabPageDateTime.SuspendLayout();
             this.tableLayoutPanelDateAndTime.SuspendLayout();
-            this.groupBoxSelectTime.SuspendLayout();
-            this.groupBoxSelectDate.SuspendLayout();
             this.groupBoxSyncDateTime.SuspendLayout();
+            this.groupBoxSelectDateTime.SuspendLayout();
             this.tabPageSettings.SuspendLayout();
             this.tableLayoutPanelSettings.SuspendLayout();
             this.groupBoxLanguage.SuspendLayout();
@@ -215,58 +211,13 @@
             // tableLayoutPanelDateAndTime
             // 
             resources.ApplyResources(this.tableLayoutPanelDateAndTime, "tableLayoutPanelDateAndTime");
-            this.tableLayoutPanelDateAndTime.Controls.Add(this.groupBoxSelectTime, 0, 1);
-            this.tableLayoutPanelDateAndTime.Controls.Add(this.groupBoxSelectDate, 0, 0);
             this.tableLayoutPanelDateAndTime.Controls.Add(this.groupBoxSyncDateTime, 1, 0);
+            this.tableLayoutPanelDateAndTime.Controls.Add(this.groupBoxSelectDateTime, 0, 0);
             this.tableLayoutPanelDateAndTime.Name = "tableLayoutPanelDateAndTime";
-            // 
-            // groupBoxSelectTime
-            // 
-            resources.ApplyResources(this.groupBoxSelectTime, "groupBoxSelectTime");
-            this.groupBoxSelectTime.Controls.Add(this.buttonApplyTime);
-            this.groupBoxSelectTime.Controls.Add(this.TimePicker);
-            this.groupBoxSelectTime.Name = "groupBoxSelectTime";
-            this.groupBoxSelectTime.TabStop = false;
-            // 
-            // buttonApplyTime
-            // 
-            resources.ApplyResources(this.buttonApplyTime, "buttonApplyTime");
-            this.buttonApplyTime.Name = "buttonApplyTime";
-            this.buttonApplyTime.UseVisualStyleBackColor = true;
-            // 
-            // TimePicker
-            // 
-            this.TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            resources.ApplyResources(this.TimePicker, "TimePicker");
-            this.TimePicker.Name = "TimePicker";
-            this.TimePicker.ShowUpDown = true;
-            this.TimePicker.ValueChanged += new System.EventHandler(this.TimePicker_ValueChanged);
-            // 
-            // groupBoxSelectDate
-            // 
-            resources.ApplyResources(this.groupBoxSelectDate, "groupBoxSelectDate");
-            this.groupBoxSelectDate.Controls.Add(this.buttonApplyDate);
-            this.groupBoxSelectDate.Controls.Add(this.DatePicker);
-            this.groupBoxSelectDate.Name = "groupBoxSelectDate";
-            this.groupBoxSelectDate.TabStop = false;
-            // 
-            // buttonApplyDate
-            // 
-            resources.ApplyResources(this.buttonApplyDate, "buttonApplyDate");
-            this.buttonApplyDate.Name = "buttonApplyDate";
-            this.buttonApplyDate.UseVisualStyleBackColor = true;
-            // 
-            // DatePicker
-            // 
-            this.DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            resources.ApplyResources(this.DatePicker, "DatePicker");
-            this.DatePicker.Name = "DatePicker";
-            this.DatePicker.ValueChanged += new System.EventHandler(this.DatePicker_ValueChanged);
             // 
             // groupBoxSyncDateTime
             // 
             resources.ApplyResources(this.groupBoxSyncDateTime, "groupBoxSyncDateTime");
-            this.tableLayoutPanelDateAndTime.SetColumnSpan(this.groupBoxSyncDateTime, 2);
             this.groupBoxSyncDateTime.Controls.Add(this.buttonSyncDateTime);
             this.groupBoxSyncDateTime.Name = "groupBoxSyncDateTime";
             this.groupBoxSyncDateTime.TabStop = false;
@@ -277,6 +228,28 @@
             this.buttonSyncDateTime.Name = "buttonSyncDateTime";
             this.buttonSyncDateTime.UseVisualStyleBackColor = true;
             this.buttonSyncDateTime.Click += new System.EventHandler(this.ButtonSyncDateTime_Click);
+            // 
+            // groupBoxSelectDateTime
+            // 
+            resources.ApplyResources(this.groupBoxSelectDateTime, "groupBoxSelectDateTime");
+            this.groupBoxSelectDateTime.Controls.Add(this.buttonApplyDateTime);
+            this.groupBoxSelectDateTime.Controls.Add(this.dateTimePicker);
+            this.groupBoxSelectDateTime.Name = "groupBoxSelectDateTime";
+            this.groupBoxSelectDateTime.TabStop = false;
+            // 
+            // buttonApplyDateTime
+            // 
+            resources.ApplyResources(this.buttonApplyDateTime, "buttonApplyDateTime");
+            this.buttonApplyDateTime.Name = "buttonApplyDateTime";
+            this.buttonApplyDateTime.UseVisualStyleBackColor = true;
+            this.buttonApplyDateTime.Click += new System.EventHandler(this.ButtonApplyDateTime_Click);
+            // 
+            // dateTimePicker
+            // 
+            resources.ApplyResources(this.dateTimePicker, "dateTimePicker");
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.ShowUpDown = true;
             // 
             // tabPageSettings
             // 
@@ -415,12 +388,10 @@
             this.tabPageDateTime.ResumeLayout(false);
             this.tableLayoutPanelDateAndTime.ResumeLayout(false);
             this.tableLayoutPanelDateAndTime.PerformLayout();
-            this.groupBoxSelectTime.ResumeLayout(false);
-            this.groupBoxSelectTime.PerformLayout();
-            this.groupBoxSelectDate.ResumeLayout(false);
-            this.groupBoxSelectDate.PerformLayout();
             this.groupBoxSyncDateTime.ResumeLayout(false);
             this.groupBoxSyncDateTime.PerformLayout();
+            this.groupBoxSelectDateTime.ResumeLayout(false);
+            this.groupBoxSelectDateTime.PerformLayout();
             this.tabPageSettings.ResumeLayout(false);
             this.tableLayoutPanelSettings.ResumeLayout(false);
             this.tableLayoutPanelSettings.PerformLayout();
@@ -468,19 +439,16 @@
         private System.Windows.Forms.GroupBox groupBoxUpdate;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDateAndTime;
-        private System.Windows.Forms.GroupBox groupBoxSelectDate;
-        private System.Windows.Forms.DateTimePicker DatePicker;
+        private System.Windows.Forms.GroupBox groupBoxSelectDateTime;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.GroupBox groupBoxSyncDateTime;
-        private System.Windows.Forms.GroupBox groupBoxSelectTime;
-        private System.Windows.Forms.DateTimePicker TimePicker;
         private System.Windows.Forms.Button buttonSyncDateTime;
         private System.Windows.Forms.GroupBox groupBoxHints;
         private System.Windows.Forms.CheckBox checkBoxDisableElevatedAdminRightsHint;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelHome;
         private System.Windows.Forms.GroupBox groupBoxLog;
         private System.Windows.Forms.TextBox textBoxLog;
-        private System.Windows.Forms.Button buttonApplyTime;
-        private System.Windows.Forms.Button buttonApplyDate;
+        private System.Windows.Forms.Button buttonApplyDateTime;
         private System.Windows.Forms.CheckBox checkBoxDisableBalloonHint;
     }
 }

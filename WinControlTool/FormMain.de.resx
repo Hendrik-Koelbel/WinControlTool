@@ -165,14 +165,8 @@
   <data name="groupBoxSyncDateTime.Text" xml:space="preserve">
     <value>Tag und Uhrzeit sync</value>
   </data>
-  <data name="groupBoxSelectDate.Text" xml:space="preserve">
-    <value>Datum auswählen</value>
-  </data>
   <data name="buttonSyncDateTime.Text" xml:space="preserve">
     <value>Sync</value>
-  </data>
-  <data name="groupBoxSelectTime.Text" xml:space="preserve">
-    <value>Zeit auswählen</value>
   </data>
   <data name="groupBoxSecurity.Text" xml:space="preserve">
     <value>Sicherheit</value>
@@ -189,16 +183,19 @@
   <data name="groupBoxLog.Text" xml:space="preserve">
     <value>Protokoll</value>
   </data>
-  <data name="buttonApplyTime.Text" xml:space="preserve">
-    <value>Übernehmen</value>
-  </data>
-  <data name="buttonApplyDate.Text" xml:space="preserve">
-    <value>Übernehmen</value>
-  </data>
   <data name="checkBoxDisableElevatedAdminRightsHint.Text" xml:space="preserve">
     <value>Hinweis "erhöhte Adminrechte erforderlich" Deaktivieren</value>
   </data>
   <data name="checkBoxDisableBalloonHint.Text" xml:space="preserve">
     <value>Ballonhinweis deaktivieren</value>
+  </data>
+  <data name="buttonApplyDateTime.Text" xml:space="preserve">
+    <value>Übernehmen</value>
+  </data>
+  <data name="groupBoxSelectDateTime.Text" xml:space="preserve">
+    <value>Datum und Zeit auswählen</value>
+  </data>
+  <data name="dateTimePicker.CustomFormat" xml:space="preserve">
+    <value>dd.MM.yyyy HH:mm</value>
   </data>
 </root>

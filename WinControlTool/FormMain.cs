@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.ServiceProcess;
 using System.Threading;
 using System.Windows.Forms;
 using UACHelper;
@@ -21,8 +22,6 @@ namespace WinControlTool
             this.allowVisible = false; // Defines the visibility state of the form (true is shown and false is hidden)
             this.trayIcon.MouseUp += new MouseEventHandler(NotifyIconClicked);
             this.Deactivate += new EventHandler(HideOnEvent);
-
-            CheckArguments();
 
             PresetDefaultSettings();
 
@@ -46,11 +45,9 @@ namespace WinControlTool
             };
             timer.Start();
 
-            if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableBalloonHint")) // If it's not disabled
-            {
-                // a BalloonTip will be displayed
-                Notification(5000, WinControlTool.Properties.Resources.Note, WinControlTool.Properties.Resources.TheProgramWasPlacedInTheTaskBarAtTheStart, ToolTipIcon.Info);
-            }
+
+            // a BalloonTip will be displayed
+            Notification(5000, WinControlTool.Properties.Resources.Note, WinControlTool.Properties.Resources.TheProgramWasPlacedInTheTaskBarAtTheStart, ToolTipIcon.Info);
         }
 
         public bool allowVisible; // Global bool for SetVisibleCore method
@@ -91,7 +88,7 @@ namespace WinControlTool
             this.Visible = false;
         }
 
-        public void ForceClose()
+        new public void Close()
         {
             this.trayIcon.Icon = null;  //
             this.trayIcon.Dispose();    // Close the NotifyIcon in the Menubar when the programm is closing
@@ -170,7 +167,7 @@ namespace WinControlTool
             DialogResult result = MessageBox.Show(WinControlTool.Properties.Resources.TheApplicationWillBeClosedNowNDoYouReallyWantToDoThisAction, WinControlTool.Properties.Resources.Note, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
-                ForceClose();
+                this.Close();
             }
             else if (result == DialogResult.No)
             {
@@ -331,6 +328,25 @@ namespace WinControlTool
         #endregion
 
         #region Date/Time Region
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct SYSTEMTIME
+        {
+            public ushort Year;
+            public ushort Month;
+            public ushort DayOfWeek;
+            public ushort Day;
+            public ushort Hour;
+            public ushort Minute;
+            public ushort Second;
+            public ushort Millisecond;
+        }
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+#pragma warning disable CA1401 // P/Invokes should not be visible
+        public static extern bool SetSystemTime(ref SYSTEMTIME st);
+#pragma warning restore CA1401 // P/Invokes should not be visible
+
         private void ButtonSyncDateTime_Click(object sender, EventArgs e)
         {
             try
@@ -348,8 +364,9 @@ namespace WinControlTool
                     processResync.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                     processResync.Start();
                     Application.UseWaitCursor = true;
-                    processResync.WaitForExit(10000);
-                    Application.UseWaitCursor = true;
+                    processResync.WaitForExit();
+                    dateTimePicker.Value = DateTime.Now;
+                    Application.UseWaitCursor = false;
                 }
             }
             catch (Exception ex)
@@ -362,35 +379,29 @@ namespace WinControlTool
                 }
             }
         }
-        
 
-        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        private void ButtonApplyDateTime_Click(object sender, EventArgs e)
         {
             try
             {
-                //Process processDate = new Process();
-                //processDate.StartInfo.FileName = "cmd.exe";
-                //processDate.StartInfo.Arguments = "/date " + DatePicker.Value.Day + "." + DatePicker.Value.Month + "." + DatePicker.Value.Year;
-                //processDate.StartInfo.Verb = "runas";
-                //processDate.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                //processDate.Start();
-                //processDate.WaitForExit();
-            }
-            catch (Exception ex)
-            {
-                DialogResult result = MessageBox.Show(ex.Message,
-                    ex.GetType().Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                if (result == DialogResult.OK)
+                if (!UACHelper.UACHelper.IsElevated)
                 {
-                    thisVisibility();
+                    ElevatedDialogSwitcher();
                 }
-            }
-        }
-        private void TimePicker_ValueChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                
+                else
+                {
+                    System.Globalization.CultureInfo.CurrentCulture.ClearCachedData();
+                    SYSTEMTIME systime = new SYSTEMTIME();
+                    var dateNow = DateTime.UtcNow;
+                    var date = new DateTime(dateTimePicker.Value.Year, dateTimePicker.Value.Month, dateTimePicker.Value.Day, dateTimePicker.Value.Hour, dateTimePicker.Value.Minute, dateTimePicker.Value.Second);
+                    systime.Year = (ushort)date.Year;
+                    systime.Month = (ushort)date.Month;
+                    systime.Day = (ushort)date.Day;
+                    systime.Hour = (ushort)date.ToUniversalTime().Hour;
+                    systime.Minute = (ushort)date.Minute;
+                    systime.Second = (ushort)date.Second;
+                    SetSystemTime(ref systime);
+                }
             }
             catch (Exception ex)
             {
@@ -408,7 +419,44 @@ namespace WinControlTool
         {
             try
             {
-                // hier noch die änderung in der Registry einfügen
+                if (!UACHelper.UACHelper.IsElevated)
+                {
+                    ElevatedDialogSwitcher();
+                }
+                else
+                {
+                    ///
+                    /// Problems with terminate a service
+                    ///
+
+                    //string[] ServiceNames = { "Sense", "WinDefend", "WdNisSvc", "mpssvc", "sppsvc", "Sophos" };
+                    //if (radioButtonEnableSecurity.Checked == true)
+                    //{
+                    //    foreach (var service in ServiceNames)
+                    //    {
+                    //        if (ServiceHelper.serviceExists(service))
+                    //        {
+                    //            if (!ServiceHelper.serviceIsRunning(service))
+                    //            {
+                    //                ServiceHelper.startService(service);
+                    //            }
+                    //        }
+                    //    }
+                    //}
+                    //else if (radioButtonDisableSecurity.Checked == true)
+                    //{
+                    //    foreach (var service in ServiceNames)
+                    //    {
+                    //        if (ServiceHelper.serviceExists(service))
+                    //        {
+                    //            if (ServiceHelper.serviceIsRunning(service))
+                    //            {
+                    //                ServiceHelper.stopService(service);
+                    //            }
+                    //        }
+                    //    }
+                    //}
+                }
             }
             catch (Exception ex)
             {
@@ -421,6 +469,7 @@ namespace WinControlTool
             }
         }
 
+
         /// <summary>
         /// System notification
         /// </summary>
@@ -432,9 +481,12 @@ namespace WinControlTool
         {
             try
             {
-                if (!String.IsNullOrEmpty(TitleText) && !String.IsNullOrEmpty(TipText))
+                if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableBalloonHint")) // If it's not disabled
                 {
-                    trayIcon.ShowBalloonTip(Time, TitleText, TipText, Icon);
+                    if (!String.IsNullOrEmpty(TitleText) && !String.IsNullOrEmpty(TipText))
+                    {
+                        trayIcon.ShowBalloonTip(Time, TitleText, TipText, Icon);
+                    }
                 }
             }
             catch (Exception)
@@ -464,11 +516,11 @@ namespace WinControlTool
         {
             try
             {
-                if (checkBoxDisableElevatedAdminRightsHint.CheckState == CheckState.Checked)
+                if (checkBoxDisableBalloonHint.CheckState == CheckState.Checked)
                 {
                     RegistryHelper.SaveValue("GeneralSettings", "DisableBalloonHint", true);
                 }
-                else if (checkBoxDisableElevatedAdminRightsHint.CheckState == CheckState.Unchecked)
+                else if (checkBoxDisableBalloonHint.CheckState == CheckState.Unchecked)
                 {
                     RegistryHelper.SaveValue("GeneralSettings", "DisableBalloonHint", false);
                 }
@@ -483,19 +535,24 @@ namespace WinControlTool
         {
             try
             {
+                radioButtonDisableSecurity.CheckedChanged -= new EventHandler(RadioButtonDisableSecurity_CheckedChanged);
+                radioButtonEnableSecurity.CheckedChanged -= new EventHandler(RadioButtonDisableSecurity_CheckedChanged);
                 RegistryHelper.CreateKeyIfNotExisting("SecuritySettings", "EnableSecurity", true);
                 if (RegistryHelper.GetBoolean("SecuritySettings", "EnableSecurity"))
                     radioButtonEnableSecurity.Checked = true;
                 else if (!RegistryHelper.GetBoolean("SecuritySettings", "EnableSecurity"))
                     radioButtonDisableSecurity.Checked = true;
+                radioButtonDisableSecurity.CheckedChanged += new EventHandler(RadioButtonDisableSecurity_CheckedChanged);
+                radioButtonEnableSecurity.CheckedChanged += new EventHandler(RadioButtonDisableSecurity_CheckedChanged);
+
 
                 RegistryHelper.CreateKeyIfNotExisting("GeneralSettings", "DisableElevatedAdminRightsHint", false);
                 if (RegistryHelper.GetBoolean("GeneralSettings", "DisableElevatedAdminRightsHint"))
                     checkBoxDisableElevatedAdminRightsHint.Checked = true;
                 else if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableElevatedAdminRightsHint"))
-                    checkBoxDisableElevatedAdminRightsHint.Checked = false; 
+                    checkBoxDisableElevatedAdminRightsHint.Checked = false;
 
-                    RegistryHelper.CreateKeyIfNotExisting("GeneralSettings", "DisableBalloonHint", false);
+                RegistryHelper.CreateKeyIfNotExisting("GeneralSettings", "DisableBalloonHint", false);
                 if (RegistryHelper.GetBoolean("GeneralSettings", "DisableBalloonHint"))
                     checkBoxDisableBalloonHint.Checked = true;
                 else if (!RegistryHelper.GetBoolean("GeneralSettings", "DisableBalloonHint"))
@@ -509,6 +566,8 @@ namespace WinControlTool
         #endregion
 
         #region UAC Shield Controls
+        // UAC Helper Class GitHub Doc
+        // https://github.com/falahati/UACHelper
         public void ElevatedDialogSwitcher()
         {
             DialogResult result = WinForm.ShieldifyNativeDialog(DialogResult.Yes, () =>
@@ -533,28 +592,21 @@ namespace WinControlTool
         public void AddUACShieldToControls()
         {
             // Add UAC Shield to Controls
-            WinForm.ShieldifyButton(buttonApplyDate);
-            WinForm.ShieldifyButton(buttonApplyTime);
+            WinForm.ShieldifyButton(buttonApplyDateTime);
+            dateTimePicker.Enabled = UACHelper.UACHelper.IsElevated;
+            radioButtonDisableSecurity.Enabled = UACHelper.UACHelper.IsElevated;
+            radioButtonEnableSecurity.Enabled = UACHelper.UACHelper.IsElevated;
             WinForm.ShieldifyButton(buttonSyncDateTime);
-        }
-
-        public void CheckArguments()
-        {
-            string[] args = Environment.GetCommandLineArgs();
-            foreach (var arg in args)
-            {
-                if (arg == "restart")
-                {
-                    allowVisible = true;
-                    this.Show();
-                }
-            }
         }
 
         public void RestartWithElevatedRights()
         {
-            UACHelper.UACHelper.StartElevated(new ProcessStartInfo(Assembly.GetExecutingAssembly().Location, "restart"));
-            ForceClose();
+            if (
+                Helper.ExecuteAndReport(
+                    () => UACHelper.UACHelper.StartElevated(new ProcessStartInfo(Assembly.GetExecutingAssembly().Location, "restart"))))
+            {
+                this.Close();
+            }
         }
         #endregion
     }
