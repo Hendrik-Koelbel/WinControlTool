@@ -124,57 +124,6 @@
     <value>112, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkForUpdateToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAHpJREFUOE/djksKwCAMBT26lxA8hodz33ZiAtYGUWg3HcginzckfMZxUWuVAh2v
-        YeGUktSWpA/HGKWWJV54WTKGxw+mEi9MbwJvd5PQlFIeByYAZjln6bkFjTcBsLAw9AJgZ2HQeENngvW9
-        wLuZwtEo2OIngh4dv00IJ7yrd80INso+AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="checkForUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
-  </data>
-  <data name="checkForUpdateToolStripMenuItem.Text" xml:space="preserve">
-    <value>Check for Update</value>
-  </data>
-  <data name="ShowToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAfpJREFUOE9joClYv3N/wqRFK87PXrv92/TVm7/0zll0fv6q9QlQafxg4bqt83sW
-        rv6y+crL65vv/z+w+Ma/tV0Hny0vm7Lo5uQFy+ZDlWEHIJu7gJoPPv17YcO9f3sX3fi/atLFf9Pbz/5r
-        qz/5v6J66uLLs5aswu0SkLM3XHp+acPdfzvn3/i3bOLFf5Pbzvxrbjj1r7T+1L+shp0PSrtnzD0PVY4J
-        Zq3Z8mXt3X/b5l7/t6j/wr8JLWf+1def/FdUd/pfOtCAGCAOmrhw5QOockwwfeXGj3Ov/pvff/FfT/Pp
-        fzV1p/7lAw1IAeKo2tP//OtP/XeZtGjVfahyTAAK7ea9j6c3nfpXWX/6Xw7QgEQgDgca4FN/4p9T65ar
-        YXi9AIqqkonzrtSd/JcJ1BAHNCSk9tQ/T6uqTdsbT/0zrZk8+xDeQFyyZmNC/6wF/6umLDjXsOMOyBC3
-        +jP/bcw7T/93qlz6bPK8pbijMa+6dX5afun/0KiYBNP20/8tJtwAY3Mgtp755L/F5Dv/1fLWYjegrLVv
-        fklL3//o7FKwApP+G/8tZ7/AwPod5//Lpi9B9QJMc0JBNdx0nZbT/w16b8Cx6bQn/w0n3Pkvk43mgsKG
-        TgzN2IB60+n/kplomv2j4x3iMvIIagYBwWQcecA/PN4ByiQRMDAAAJGNPob+PblJAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="ShowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
-  </data>
-  <data name="ShowToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 6</value>
-  </data>
-  <data name="CloseToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAJBJREFUOE+tkksOgCAQQ3sAVG6oC+PKc7jyaCYeCdM4kyADxF83YNtXN+A3jWiG
-        CW7v0XmxjJixw65Yp2jMcGFBE0ojCrPD7mVEgw0+rGjNiMLM2NEfSWwL8UgtE/xUqXgLVuVGbsOqdOQR
-        TH0aSGGe8b06koP5nfPMSAmmX8sE/+EhfX7KFI0SrNIRA78XcACv8bMZ3s0UrwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="CloseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
-  </data>
-  <data name="CloseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
   <data name="contextMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 76</value>
   </data>
@@ -1043,27 +992,59 @@
   <data name="trayIcon.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkForUpdateToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAHpJREFUOE/djksKwCAMBT26lxA8hodz33ZiAtYGUWg3HcginzckfMZxUWuVAh2v
+        YeGUktSWpA/HGKWWJV54WTKGxw+mEi9MbwJvd5PQlFIeByYAZjln6bkFjTcBsLAw9AJgZ2HQeENngvW9
+        wLuZwtEo2OIngh4dv00IJ7yrd80INso+AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="checkForUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="checkForUpdateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check for Update</value>
+  </data>
+  <data name="ShowToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAfpJREFUOE9joClYv3N/wqRFK87PXrv92/TVm7/0zll0fv6q9QlQafxg4bqt83sW
+        rv6y+crL65vv/z+w+Ma/tV0Hny0vm7Lo5uQFy+ZDlWEHIJu7gJoPPv17YcO9f3sX3fi/atLFf9Pbz/5r
+        qz/5v6J66uLLs5aswu0SkLM3XHp+acPdfzvn3/i3bOLFf5Pbzvxrbjj1r7T+1L+shp0PSrtnzD0PVY4J
+        Zq3Z8mXt3X/b5l7/t6j/wr8JLWf+1def/FdUd/pfOtCAGCAOmrhw5QOockwwfeXGj3Ov/pvff/FfT/Pp
+        fzV1p/7lAw1IAeKo2tP//OtP/XeZtGjVfahyTAAK7ea9j6c3nfpXWX/6Xw7QgEQgDgca4FN/4p9T65ar
+        YXi9AIqqkonzrtSd/JcJ1BAHNCSk9tQ/T6uqTdsbT/0zrZk8+xDeQFyyZmNC/6wF/6umLDjXsOMOyBC3
+        +jP/bcw7T/93qlz6bPK8pbijMa+6dX5afun/0KiYBNP20/8tJtwAY3Mgtp755L/F5Dv/1fLWYjegrLVv
+        fklL3//o7FKwApP+G/8tZ7/AwPod5//Lpi9B9QJMc0JBNdx0nZbT/w16b8Cx6bQn/w0n3Pkvk43mgsKG
+        TgzN2IB60+n/kplomv2j4x3iMvIIagYBwWQcecA/PN4ByiQRMDAAAJGNPob+PblJAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ShowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="ShowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 6</value>
+  </data>
+  <data name="CloseToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAJBJREFUOE+tkksOgCAQQ3sAVG6oC+PKc7jyaCYeCdM4kyADxF83YNtXN+A3jWiG
+        CW7v0XmxjJixw65Yp2jMcGFBE0ojCrPD7mVEgw0+rGjNiMLM2NEfSWwL8UgtE/xUqXgLVuVGbsOqdOQR
+        TH0aSGGe8b06koP5nfPMSAmmX8sE/+EhfX7KFI0SrNIRA78XcACv8bMZ3s0UrwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="CloseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="CloseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="tableLayoutPanelMain.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="tableLayoutPanelHome.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanelHome.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanelHome.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 302</value>
-  </data>
-  <data name="tableLayoutPanelHome.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanelHome.Name" xml:space="preserve">
     <value>tableLayoutPanelHome</value>
@@ -1077,6 +1058,7 @@
   <data name="&gt;&gt;tableLayoutPanelHome.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanelHome.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
@@ -1102,108 +1084,6 @@
     <value>tabControlMain</value>
   </data>
   <data name="&gt;&gt;tabPageHome.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelSecurity.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBoxSecurity.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButtonDisableSecurity.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButtonDisableSecurity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 56</value>
-  </data>
-  <data name="radioButtonDisableSecurity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 24</value>
-  </data>
-  <data name="radioButtonDisableSecurity.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="radioButtonDisableSecurity.Text" xml:space="preserve">
-    <value>Deactivated</value>
-  </data>
-  <data name="&gt;&gt;radioButtonDisableSecurity.Name" xml:space="preserve">
-    <value>radioButtonDisableSecurity</value>
-  </data>
-  <data name="&gt;&gt;radioButtonDisableSecurity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonDisableSecurity.Parent" xml:space="preserve">
-    <value>groupBoxSecurity</value>
-  </data>
-  <data name="&gt;&gt;radioButtonDisableSecurity.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="radioButtonEnableSecurity.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButtonEnableSecurity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 26</value>
-  </data>
-  <data name="radioButtonEnableSecurity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 24</value>
-  </data>
-  <data name="radioButtonEnableSecurity.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="radioButtonEnableSecurity.Text" xml:space="preserve">
-    <value>Activated</value>
-  </data>
-  <data name="&gt;&gt;radioButtonEnableSecurity.Name" xml:space="preserve">
-    <value>radioButtonEnableSecurity</value>
-  </data>
-  <data name="&gt;&gt;radioButtonEnableSecurity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonEnableSecurity.Parent" xml:space="preserve">
-    <value>groupBoxSecurity</value>
-  </data>
-  <data name="&gt;&gt;radioButtonEnableSecurity.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxSecurity.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxSecurity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="groupBoxSecurity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 106</value>
-  </data>
-  <data name="groupBoxSecurity.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBoxSecurity.Text" xml:space="preserve">
-    <value>Security</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSecurity.Name" xml:space="preserve">
-    <value>groupBoxSecurity</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSecurity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSecurity.Parent" xml:space="preserve">
-    <value>tableLayoutPanelSecurity</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSecurity.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelSecurity.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelSecurity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanelSecurity.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelSecurity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 302</value>
-  </data>
-  <data name="tableLayoutPanelSecurity.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanelSecurity.Name" xml:space="preserve">
@@ -1245,246 +1125,6 @@
   <data name="&gt;&gt;tabPageSecure.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanelDateAndTime.ColumnCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="groupBoxSelectTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonApplyTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonApplyTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonApplyTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 69</value>
-  </data>
-  <data name="buttonApplyTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 33</value>
-  </data>
-  <data name="buttonApplyTime.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonApplyTime.Text" xml:space="preserve">
-    <value>Apply</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyTime.Name" xml:space="preserve">
-    <value>buttonApplyTime</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyTime.Parent" xml:space="preserve">
-    <value>groupBoxSelectTime</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyTime.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 36</value>
-  </data>
-  <data name="TimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 27</value>
-  </data>
-  <data name="TimePicker.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TimePicker.Name" xml:space="preserve">
-    <value>TimePicker</value>
-  </data>
-  <data name="&gt;&gt;TimePicker.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TimePicker.Parent" xml:space="preserve">
-    <value>groupBoxSelectTime</value>
-  </data>
-  <data name="&gt;&gt;TimePicker.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxSelectTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxSelectTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 139</value>
-  </data>
-  <data name="groupBoxSelectTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 128</value>
-  </data>
-  <data name="groupBoxSelectTime.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="groupBoxSelectTime.Text" xml:space="preserve">
-    <value>Select time</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectTime.Name" xml:space="preserve">
-    <value>groupBoxSelectTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelDateAndTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectTime.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxSelectDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonApplyDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonApplyDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonApplyDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 71</value>
-  </data>
-  <data name="buttonApplyDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 33</value>
-  </data>
-  <data name="buttonApplyDate.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="buttonApplyDate.Text" xml:space="preserve">
-    <value>Apply</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyDate.Name" xml:space="preserve">
-    <value>buttonApplyDate</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyDate.Parent" xml:space="preserve">
-    <value>groupBoxSelectDate</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyDate.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="DatePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 38</value>
-  </data>
-  <data name="DatePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 27</value>
-  </data>
-  <data name="DatePicker.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DatePicker.Name" xml:space="preserve">
-    <value>DatePicker</value>
-  </data>
-  <data name="&gt;&gt;DatePicker.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DatePicker.Parent" xml:space="preserve">
-    <value>groupBoxSelectDate</value>
-  </data>
-  <data name="&gt;&gt;DatePicker.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxSelectDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxSelectDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="groupBoxSelectDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 130</value>
-  </data>
-  <data name="groupBoxSelectDate.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBoxSelectDate.Text" xml:space="preserve">
-    <value>Select date</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectDate.Name" xml:space="preserve">
-    <value>groupBoxSelectDate</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectDate.Parent" xml:space="preserve">
-    <value>tableLayoutPanelDateAndTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelectDate.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxSyncDateTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonSyncDateTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonSyncDateTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonSyncDateTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 38</value>
-  </data>
-  <data name="buttonSyncDateTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 33</value>
-  </data>
-  <data name="buttonSyncDateTime.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonSyncDateTime.Text" xml:space="preserve">
-    <value>Sync</value>
-  </data>
-  <data name="&gt;&gt;buttonSyncDateTime.Name" xml:space="preserve">
-    <value>buttonSyncDateTime</value>
-  </data>
-  <data name="&gt;&gt;buttonSyncDateTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonSyncDateTime.Parent" xml:space="preserve">
-    <value>groupBoxSyncDateTime</value>
-  </data>
-  <data name="&gt;&gt;buttonSyncDateTime.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxSyncDateTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxSyncDateTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 3</value>
-  </data>
-  <data name="groupBoxSyncDateTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 130</value>
-  </data>
-  <data name="groupBoxSyncDateTime.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBoxSyncDateTime.Text" xml:space="preserve">
-    <value>Sync day and time</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSyncDateTime.Name" xml:space="preserve">
-    <value>groupBoxSyncDateTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSyncDateTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSyncDateTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelDateAndTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSyncDateTime.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelDateAndTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelDateAndTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanelDateAndTime.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanelDateAndTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 302</value>
-  </data>
-  <data name="tableLayoutPanelDateAndTime.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;tableLayoutPanelDateAndTime.Name" xml:space="preserve">
     <value>tableLayoutPanelDateAndTime</value>
   </data>
@@ -1498,7 +1138,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanelDateAndTime.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSelectTime" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSelectDate" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSyncDateTime" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSelectTime" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSelectDate" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSyncDateTime" Row="0" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPageDateTime.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -1530,15 +1170,6 @@
   <data name="groupBoxLanguage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="comboBoxLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 38</value>
-  </data>
-  <data name="comboBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 28</value>
-  </data>
-  <data name="comboBoxLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;comboBoxLanguage.Name" xml:space="preserve">
     <value>comboBoxLanguage</value>
   </data>
@@ -1558,7 +1189,7 @@
     <value>3, 3</value>
   </data>
   <data name="groupBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 95</value>
+    <value>177, 92</value>
   </data>
   <data name="groupBoxLanguage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1581,14 +1212,17 @@
   <data name="groupBoxUpdate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="groupBoxUpdate.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
   <data name="buttonUpdate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="buttonUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 33</value>
+    <value>6, 36</value>
   </data>
   <data name="buttonUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 36</value>
+    <value>153, 30</value>
   </data>
   <data name="buttonUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1615,7 +1249,7 @@
     <value>186, 3</value>
   </data>
   <data name="groupBoxUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 95</value>
+    <value>250, 92</value>
   </data>
   <data name="groupBoxUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1638,24 +1272,6 @@
   <data name="groupBoxHints.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBoxDisableBalloonHint.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxDisableBalloonHint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="checkBoxDisableBalloonHint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 56</value>
-  </data>
-  <data name="checkBoxDisableBalloonHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 24</value>
-  </data>
-  <data name="checkBoxDisableBalloonHint.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="checkBoxDisableBalloonHint.Text" xml:space="preserve">
-    <value>Disable balloon hint</value>
-  </data>
   <data name="&gt;&gt;checkBoxDisableBalloonHint.Name" xml:space="preserve">
     <value>checkBoxDisableBalloonHint</value>
   </data>
@@ -1667,21 +1283,6 @@
   </data>
   <data name="&gt;&gt;checkBoxDisableBalloonHint.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="checkBoxDisableElevatedAdminRightsHint.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxDisableElevatedAdminRightsHint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 26</value>
-  </data>
-  <data name="checkBoxDisableElevatedAdminRightsHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 24</value>
-  </data>
-  <data name="checkBoxDisableElevatedAdminRightsHint.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="checkBoxDisableElevatedAdminRightsHint.Text" xml:space="preserve">
-    <value>Disable "elevated admin rights required" hint</value>
   </data>
   <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.Name" xml:space="preserve">
     <value>checkBoxDisableElevatedAdminRightsHint</value>
@@ -1699,10 +1300,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBoxHints.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 104</value>
+    <value>3, 101</value>
   </data>
   <data name="groupBoxHints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>433, 106</value>
+    <value>433, 192</value>
   </data>
   <data name="groupBoxHints.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1750,7 +1351,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanelSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxLanguage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxUpdate" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxHints" Row="1" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxLanguage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxUpdate" Row="0" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="groupBoxHints" Row="1" RowSpan="2" Column="0" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPageSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -1778,111 +1379,6 @@
   </data>
   <data name="&gt;&gt;tabPageSettings.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="tableLayoutPanelLog.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBoxLog.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBoxLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 54</value>
-  </data>
-  <data name="textBoxLog.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBoxLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 233</value>
-  </data>
-  <data name="textBoxLog.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxLog.Name" xml:space="preserve">
-    <value>textBoxLog</value>
-  </data>
-  <data name="&gt;&gt;textBoxLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxLog.Parent" xml:space="preserve">
-    <value>groupBoxLog</value>
-  </data>
-  <data name="&gt;&gt;textBoxLog.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="buttonReset.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonReset.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 18</value>
-  </data>
-  <data name="buttonReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 30</value>
-  </data>
-  <data name="buttonReset.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="buttonReset.Text" xml:space="preserve">
-    <value>Clear log</value>
-  </data>
-  <data name="&gt;&gt;buttonReset.Name" xml:space="preserve">
-    <value>buttonReset</value>
-  </data>
-  <data name="&gt;&gt;buttonReset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonReset.Parent" xml:space="preserve">
-    <value>groupBoxLog</value>
-  </data>
-  <data name="&gt;&gt;buttonReset.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="groupBoxLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>439, 296</value>
-  </data>
-  <data name="groupBoxLog.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBoxLog.Text" xml:space="preserve">
-    <value>Log</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLog.Name" xml:space="preserve">
-    <value>groupBoxLog</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLog.Parent" xml:space="preserve">
-    <value>tableLayoutPanelLog</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLog.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanelLog.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 302</value>
-  </data>
-  <data name="tableLayoutPanelLog.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanelLog.Name" xml:space="preserve">
     <value>tableLayoutPanelLog</value>
@@ -2042,6 +1538,780 @@
   </data>
   <data name="tableLayoutPanelMain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tabControlMain" Row="1" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="labelHeader" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGitHub" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanelHome.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelHome.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelHome.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 302</value>
+  </data>
+  <data name="tableLayoutPanelHome.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.Name" xml:space="preserve">
+    <value>tableLayoutPanelHome</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelHome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelHome.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanelSecurity.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.Name" xml:space="preserve">
+    <value>groupBoxSecurity</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSecurity</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelSecurity.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelSecurity.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 302</value>
+  </data>
+  <data name="tableLayoutPanelSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSecurity.Name" xml:space="preserve">
+    <value>tableLayoutPanelSecurity</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSecurity.Parent" xml:space="preserve">
+    <value>tabPageSecure</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelSecurity.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSecurity" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxSecurity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.Name" xml:space="preserve">
+    <value>radioButtonDisableSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.Parent" xml:space="preserve">
+    <value>groupBoxSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.Name" xml:space="preserve">
+    <value>radioButtonEnableSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.Parent" xml:space="preserve">
+    <value>groupBoxSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSecurity.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="groupBoxSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 106</value>
+  </data>
+  <data name="groupBoxSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSecurity.Text" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.Name" xml:space="preserve">
+    <value>groupBoxSecurity</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSecurity</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonDisableSecurity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonDisableSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="radioButtonDisableSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 24</value>
+  </data>
+  <data name="radioButtonDisableSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButtonDisableSecurity.Text" xml:space="preserve">
+    <value>Deactivated</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.Name" xml:space="preserve">
+    <value>radioButtonDisableSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.Parent" xml:space="preserve">
+    <value>groupBoxSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDisableSecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonEnableSecurity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonEnableSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="radioButtonEnableSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 24</value>
+  </data>
+  <data name="radioButtonEnableSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButtonEnableSecurity.Text" xml:space="preserve">
+    <value>Activated</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.Name" xml:space="preserve">
+    <value>radioButtonEnableSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.Parent" xml:space="preserve">
+    <value>groupBoxSecurity</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnableSecurity.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelDateAndTime.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.Name" xml:space="preserve">
+    <value>groupBoxSelectTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDateAndTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.Name" xml:space="preserve">
+    <value>groupBoxSelectDate</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDateAndTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.Name" xml:space="preserve">
+    <value>groupBoxSyncDateTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDateAndTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelDateAndTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelDateAndTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelDateAndTime.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanelDateAndTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 302</value>
+  </data>
+  <data name="tableLayoutPanelDateAndTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDateAndTime.Name" xml:space="preserve">
+    <value>tableLayoutPanelDateAndTime</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDateAndTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDateAndTime.Parent" xml:space="preserve">
+    <value>tabPageDateTime</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDateAndTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelDateAndTime.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSelectTime" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSelectDate" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSyncDateTime" Row="0" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxSelectTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Name" xml:space="preserve">
+    <value>buttonApplyTime</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Parent" xml:space="preserve">
+    <value>groupBoxSelectTime</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.Name" xml:space="preserve">
+    <value>TimePicker</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.Parent" xml:space="preserve">
+    <value>groupBoxSelectTime</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSelectTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxSelectTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 139</value>
+  </data>
+  <data name="groupBoxSelectTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 128</value>
+  </data>
+  <data name="groupBoxSelectTime.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxSelectTime.Text" xml:space="preserve">
+    <value>Select time</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.Name" xml:space="preserve">
+    <value>groupBoxSelectTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDateAndTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonApplyTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonApplyTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonApplyTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 69</value>
+  </data>
+  <data name="buttonApplyTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 33</value>
+  </data>
+  <data name="buttonApplyTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonApplyTime.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Name" xml:space="preserve">
+    <value>buttonApplyTime</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.Parent" xml:space="preserve">
+    <value>groupBoxSelectTime</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
+  <data name="TimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 27</value>
+  </data>
+  <data name="TimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.Name" xml:space="preserve">
+    <value>TimePicker</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.Parent" xml:space="preserve">
+    <value>groupBoxSelectTime</value>
+  </data>
+  <data name="&gt;&gt;TimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSelectDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Name" xml:space="preserve">
+    <value>buttonApplyDate</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Parent" xml:space="preserve">
+    <value>groupBoxSelectDate</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.Name" xml:space="preserve">
+    <value>DatePicker</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.Parent" xml:space="preserve">
+    <value>groupBoxSelectDate</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSelectDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxSelectDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="groupBoxSelectDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 130</value>
+  </data>
+  <data name="groupBoxSelectDate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSelectDate.Text" xml:space="preserve">
+    <value>Select date</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.Name" xml:space="preserve">
+    <value>groupBoxSelectDate</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDateAndTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSelectDate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonApplyDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonApplyDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonApplyDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 71</value>
+  </data>
+  <data name="buttonApplyDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 33</value>
+  </data>
+  <data name="buttonApplyDate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonApplyDate.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Name" xml:space="preserve">
+    <value>buttonApplyDate</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.Parent" xml:space="preserve">
+    <value>groupBoxSelectDate</value>
+  </data>
+  <data name="&gt;&gt;buttonApplyDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 38</value>
+  </data>
+  <data name="DatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 27</value>
+  </data>
+  <data name="DatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.Name" xml:space="preserve">
+    <value>DatePicker</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.Parent" xml:space="preserve">
+    <value>groupBoxSelectDate</value>
+  </data>
+  <data name="&gt;&gt;DatePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSyncDateTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBoxSyncDateTime.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.Name" xml:space="preserve">
+    <value>buttonSyncDateTime</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.Parent" xml:space="preserve">
+    <value>groupBoxSyncDateTime</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxSyncDateTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxSyncDateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 3</value>
+  </data>
+  <data name="groupBoxSyncDateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 130</value>
+  </data>
+  <data name="groupBoxSyncDateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxSyncDateTime.Text" xml:space="preserve">
+    <value>Sync day and time</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.Name" xml:space="preserve">
+    <value>groupBoxSyncDateTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDateAndTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSyncDateTime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonSyncDateTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonSyncDateTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSyncDateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 37</value>
+  </data>
+  <data name="buttonSyncDateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 30</value>
+  </data>
+  <data name="buttonSyncDateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonSyncDateTime.Text" xml:space="preserve">
+    <value>Sync</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.Name" xml:space="preserve">
+    <value>buttonSyncDateTime</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.Parent" xml:space="preserve">
+    <value>groupBoxSyncDateTime</value>
+  </data>
+  <data name="&gt;&gt;buttonSyncDateTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBoxLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 38</value>
+  </data>
+  <data name="comboBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 28</value>
+  </data>
+  <data name="comboBoxLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.Name" xml:space="preserve">
+    <value>comboBoxLanguage</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.Parent" xml:space="preserve">
+    <value>groupBoxLanguage</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 24</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="checkBoxDisableBalloonHint.Text" xml:space="preserve">
+    <value>Disable balloon hint</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.Name" xml:space="preserve">
+    <value>checkBoxDisableBalloonHint</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.Parent" xml:space="preserve">
+    <value>groupBoxHints</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableBalloonHint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 24</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBoxDisableElevatedAdminRightsHint.Text" xml:space="preserve">
+    <value>Disable "elevated admin rights required" hint</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.Name" xml:space="preserve">
+    <value>checkBoxDisableElevatedAdminRightsHint</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.Parent" xml:space="preserve">
+    <value>groupBoxHints</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDisableElevatedAdminRightsHint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelLog.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Name" xml:space="preserve">
+    <value>groupBoxLog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Parent" xml:space="preserve">
+    <value>tableLayoutPanelLog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelLog.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 302</value>
+  </data>
+  <data name="tableLayoutPanelLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelLog.Name" xml:space="preserve">
+    <value>tableLayoutPanelLog</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelLog.Parent" xml:space="preserve">
+    <value>tabPageLog</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelLog.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxLog" Row="0" RowSpan="2" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxLog.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.Name" xml:space="preserve">
+    <value>textBoxLog</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.Parent" xml:space="preserve">
+    <value>groupBoxLog</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.Name" xml:space="preserve">
+    <value>buttonReset</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.Parent" xml:space="preserve">
+    <value>groupBoxLog</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="groupBoxLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 296</value>
+  </data>
+  <data name="groupBoxLog.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxLog.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Name" xml:space="preserve">
+    <value>groupBoxLog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.Parent" xml:space="preserve">
+    <value>tableLayoutPanelLog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 54</value>
+  </data>
+  <data name="textBoxLog.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 233</value>
+  </data>
+  <data name="textBoxLog.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.Name" xml:space="preserve">
+    <value>textBoxLog</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.Parent" xml:space="preserve">
+    <value>groupBoxLog</value>
+  </data>
+  <data name="&gt;&gt;textBoxLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonReset.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="buttonReset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 18</value>
+  </data>
+  <data name="buttonReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 30</value>
+  </data>
+  <data name="buttonReset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonReset.Text" xml:space="preserve">
+    <value>Clear log</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.Name" xml:space="preserve">
+    <value>buttonReset</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.Parent" xml:space="preserve">
+    <value>groupBoxLog</value>
+  </data>
+  <data name="&gt;&gt;buttonReset.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -266,6 +266,7 @@
             // groupBoxSyncDateTime
             // 
             resources.ApplyResources(this.groupBoxSyncDateTime, "groupBoxSyncDateTime");
+            this.tableLayoutPanelDateAndTime.SetColumnSpan(this.groupBoxSyncDateTime, 2);
             this.groupBoxSyncDateTime.Controls.Add(this.buttonSyncDateTime);
             this.groupBoxSyncDateTime.Name = "groupBoxSyncDateTime";
             this.groupBoxSyncDateTime.TabStop = false;
@@ -309,6 +310,7 @@
             // groupBoxUpdate
             // 
             resources.ApplyResources(this.groupBoxUpdate, "groupBoxUpdate");
+            this.tableLayoutPanelSettings.SetColumnSpan(this.groupBoxUpdate, 2);
             this.groupBoxUpdate.Controls.Add(this.buttonUpdate);
             this.groupBoxUpdate.Name = "groupBoxUpdate";
             this.groupBoxUpdate.TabStop = false;
@@ -327,6 +329,7 @@
             this.groupBoxHints.Controls.Add(this.checkBoxDisableBalloonHint);
             this.groupBoxHints.Controls.Add(this.checkBoxDisableElevatedAdminRightsHint);
             this.groupBoxHints.Name = "groupBoxHints";
+            this.tableLayoutPanelSettings.SetRowSpan(this.groupBoxHints, 2);
             this.groupBoxHints.TabStop = false;
             // 
             // checkBoxDisableBalloonHint
